@@ -1,0 +1,118 @@
+/* GLOBAL */
+:root {
+    --blue-1: #3D8BF7;
+    --blue-2: #93B9FF;
+    --blue-3: #C9DAF4;
+    --gray-1: #E7E8EA;
+    --gray-2: #F1F1F1;
+}
+
+/* style */
+.flex-mid {
+    display: flex;
+    align-items: center;
+    gap: 10;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.flex-1 {
+    flex: 1;
+}
+
+.wid-50 {
+    width: 50%;
+}
+
+.mt-20 {
+    margin-top: 20px;
+}
+
+.mt-10 {
+    margin-top: 10px;
+}
+
+.ml-10 {
+    margin-left: 50px;
+}
+
+.pr-30 {
+    padding-right: 30px;
+}
+
+/*  color */
+.text-myBlue {
+    color: var(--blue-1);
+}
+
+.bg-gray-2 {
+    background-color: var(--gray-2);
+}
+
+/* button */
+.my-outline-button {
+    outline: none !important;
+    border: var(--blue-1) 1px solid;
+    color: var(--blue-1);
+    box-shadow: none;
+}
+
+.my-text-button {
+    background: none !important;
+    ;
+    outline: none;
+}
+
+/* table */
+.my-table {
+    margin-top: 10px;
+    border: 1px solid var(--gray-1);
+    background: white;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0px 3px 5px -4px rgba(0, 0, 0, 0.75);
+    font-size: 1.1rem;
+}
+
+table {
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+tr:nth-child(odd) {
+    background-color: #f2f2f2;
+}
+
+td {
+    padding: 8px;
+}
+
+th {
+    padding: 28px 28px 18px 28px;
+    background: white;
+}
+
+/* div */
+.div-center {
+    margin: 0px auto;
+    width: fit-content;
+    padding: 10px;
+}
+
+.my-advantageSearch {
+    margin-top: 10px;
+    gap: 2;
+    border: 1px solid var(--gray-1);
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 3px 5px -4px rgba(0, 0, 0, 0.75);
+    font-size: 1.1rem;
+    padding: 25px 50px 10px;
+}
+
+.my-advantageSearch__item {
+    flex: 1;
+}
