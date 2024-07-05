@@ -1,0 +1,29 @@
+
+.accident-wrapper{
+    list-style: none;
+}
+.accident-item {
+    border: 1px solid #b4b4b4 ;
+    border-radius: 5px;
+    padding: 10px 0;
+}
+.accident-item +.accident-item{
+    margin-bottom: 10px;
+}
+.accident-item.isOpenDetail{
+}
+.accident-item.header{
+    border: none ;
+    padding: 5px 0;
+}
+.accident-detail{
+    margin: 10px 20px ;
+    padding: 10px 24px 0;
+    border-top: 1px solid #b4b4b4;
+}
+.detail-item{
+    background-color: var(--bg-color);
+    border-radius: 10px;
+    padding: 10px 40px;
+    margin: 15px 0;
+}

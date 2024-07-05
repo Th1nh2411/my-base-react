@@ -51,22 +51,40 @@
 }
 
 :root {
-  --primary-color: #3D8BF7;
-  --primary-dark-color: #1c69d4;
+  /* color */
+  --primary-color: #3d8bf7;
+  --primary-strong-color: #1c69d4;
   --secondary-color: #8f8f8f;
-  --border-color: #E7E8EA;
-  --button-bg-color: #515151;
-  --card-bg-color: #fff;
-  --bg-color: #f5f5f5;
-  --bg-dark-color: #f1f1f1;
-  --box-shadow-color: #0003;
-  --default-layout-header-height: 80px;
-  --hover-color: #1f915633;
-  --default-layout-width: 1300px;
-  --default-layout-horizontal-spacer: 20px;
   --black: #000;
   --white: #fff;
+  --blue-sky: #93b9ff;
+  --blue-smoke: #c9daf4;
+  --gray-scorpion: #5D5D5D;
+
+  /* border-color */
+  --border-color: #e7e8ea;
+  --border-strong-color: #b4b4b4;
+
+  /* bg color */
+  --bg-color: #f5f5f5;
+  --button-bg-color: #515151;
+  --card-bg-color: #fff;
+  --bg-strong-color: #f1f1f1;
+
+  /* box-shadow color */
+  --box-shadow-color: #0003;
+
+  /* hover color */
+  --hover-color: #1f915633;
+
+  /* text-color */
   --text-color: #333;
+
+  /* default color */
+  --default-layout-header-height: 80px;
+  --default-layout-width: 1300px;
+  --default-layout-horizontal-spacer: 20px;
+
   /* Search */
   --search-border-radius: 92px;
   --search-height: 40px;
@@ -187,7 +205,34 @@ section {
     background-color: #cccccc69;
   }
 }
-
+.bottom-right-corner-sm {
+  position: absolute;
+  right: 12px;
+  bottom: 12px;
+  z-index: 1;
+}
+.bottom-right-corner {
+  position: absolute;
+  right: 20px;
+  bottom: 24px;
+  z-index: 1;
+}
+.top-right-corner-sm {
+  position: absolute;
+  right: 20px;
+  top: 12px;
+  z-index: 1;
+}
+.top-right-corner {
+  position: absolute;
+  right: 20px;
+  top: 24px;
+  z-index: 1;
+}
+.hovered:hover{
+  opacity: 0.75;
+  cursor: pointer;
+}
 /* Custom tippy tool tip */
 html body {
   .ant-dropdown .ant-dropdown-menu {
@@ -208,8 +253,15 @@ html body {
   .ant-input-affix-wrapper .ant-input-prefix {
     margin-inline-end: 10px;
   }
-  .ant-form-item .ant-form-item-explain-error{
-    margin-bottom: 8px;
+  .ant-form-item .ant-form-item-explain-error {
+    margin-bottom: 2px 0 6px;
+    font-size: 14px;
+  }
+  .ant-modal .ant-modal-content {
+    padding: 0;
+  }
+  .ant-form-item .ant-form-item-label >label.ant-form-item-required:not(.ant-form-item-required-mark-optional)::before{
+    font-family: inherit;
   }
 }
 /* .ant-col { */
@@ -235,7 +287,7 @@ html body {
   }
 }
 /* Common style */
-.mask{
+.mask {
   position: fixed;
   top: 0;
   left: 0;
@@ -243,4 +295,21 @@ html body {
   height: 100%;
   background-color: #000000b7;
   z-index: 1000;
+}
+.app-loader:before{
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  width: 100%;
+  height: 100vh;
+  background-color: #ffffff4b;
+  content: '';
+}
+.app-loader {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 1400;
+  width: 100%;
 }

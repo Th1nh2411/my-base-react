@@ -1,13 +1,13 @@
 .wrapper {
   height: 100vh;
-  padding: 25px 25px;
+  padding: 25px 18px;
   position: fixed;
   left: 0;
   background-color: white;
 }
 .sidebar-item {
   color: #5c5c5c;
-  font-size: 18px;
+  font-size: 16px;
   padding: 4px 16px;
   width: 100%;
   text-align: center;
@@ -28,7 +28,7 @@
   left: 0;
   top: 50%;
   transform: translateY(-50%);
-  height: calc(100% - 30px);
+  height: 82%;
   width: 2px;
   border-radius: 10px;
   background-color: #ececec;

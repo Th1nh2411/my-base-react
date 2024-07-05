@@ -1,15 +1,19 @@
-import React from 'react';
+import React, { CSSProperties } from 'react';
 import { Button, ButtonProps } from 'antd';
 
 interface CustomButtonProps extends ButtonProps {
-  customColor?: string;
+  customBgColor?: string;
+  active?: boolean;
+  round?: boolean;
 }
 
-const CustomButton: React.FC<CustomButtonProps> = ({ customColor, style, ...props }) => {
-  const customStyle = {
-    backgroundColor: customColor,
+const CustomButton: React.FC<CustomButtonProps> = ({ customBgColor, style, active, round, ...props }) => {
+  const customStyle: CSSProperties = {
+    backgroundColor: active ? 'var(--primary-color)' : customBgColor,
+    color: active ? 'white' : customBgColor,
     fontWeight: props.size === 'large' ? 600 : 500,
-    padding: props.size === 'large' ? '12px 24px' : '6px 10px',
+    padding: props.size === 'large' ? '20px 24px' : props.size === 'middle' ? '16px 10px' : '6px 10px',
+    borderRadius: round ? 44 : undefined,
     ...style
   };
 

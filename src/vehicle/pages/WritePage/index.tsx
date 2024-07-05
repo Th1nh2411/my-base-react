@@ -6,9 +6,7 @@ const WritePage = () => {
     return (
       <ConfigProvider
         theme={{
-          components: {
-            Select: { colorBgContainer: 'var(--bg-color)' }
-          }
+          components: {}
         }}
       >
         <Body />

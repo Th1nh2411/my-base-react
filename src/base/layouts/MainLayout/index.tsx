@@ -31,21 +31,29 @@ const MainLayout = () => {
             defaultBorderColor: 'var(--primary-color)',
             colorPrimary: 'var(--button-bg-color)',
             paddingBlockLG: 22,
-            paddingInlineLG: 36,
-            borderRadiusLG: 44
+            paddingInlineLG: 36
           },
           Typography: {
             colorTextDescription: '#5D5D5D',
-            colorTextHeading: '#5D5D5D',
+            colorTextSecondary: '#5D5D5D',
             titleMarginBottom: 0
           },
           Form: {
-            labelColor: '#5D5D5D'
+            labelColor: '#5D5D5D',
+            labelRequiredMarkColor: 'red'
           },
           Tabs: {
             margin: 0,
+            // lineWidthBold: 3,
             itemColor: '#989898'
-          }
+          },
+          Checkbox: {
+            colorBorder: '#5D5D5D'
+          },
+          Divider: {
+            colorSplit: '#B4B4B4'
+          },
+          Select: { colorBgContainer: 'var(--bg-color)' }
         }
       }}
     >
@@ -54,7 +62,14 @@ const MainLayout = () => {
       <TopMenu />
       <SideBar />
       {auth.isLoggedIn && (
-        <Layout.Content style={{ backgroundColor: 'var(--bg-dark-color)', marginLeft: SIDE_BAR_WIDTH, height: '200vh', padding: 40 }}>
+        <Layout.Content
+          style={{
+            backgroundColor: 'var(--bg-strong-color)',
+            marginLeft: SIDE_BAR_WIDTH,
+            minHeight: `calc(100vh - ${APP_BAR_HEIGHT}px)`,
+            padding: 40
+          }}
+        >
           <Outlet />
         </Layout.Content>
       )}

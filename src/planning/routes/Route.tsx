@@ -19,16 +19,20 @@ const Routes = {
       element: <Navigate to={`/${MENU_PLANNING_URL}/list/all`} />
     },
     {
-      path: 'list/*',
+      path: 'list/:subParam',
       element: <ListPage />
     },
     {
-      path: 'view/:folder/:id',
-      element: <ViewPage />
+      path: 'view/:subParam/:id',
+      element: <ViewPage />,
     },
     {
-      path: 'write',
-      element: <WritePage />
+      path: 'write/:subParam',
+      element: <WritePage />,
+    },
+    {
+      path: '*',
+      element: <Navigate to={`/${MENU_PLANNING_URL}/list/all`} />
     }
   ]
 };

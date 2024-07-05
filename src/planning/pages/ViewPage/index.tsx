@@ -1,12 +1,24 @@
 import * as React from 'react';
+import { useMemo } from 'react';
+import Body from './Body';
+import { ConfigProvider } from 'antd';
+export interface IViewPageProps {}
+const ViewPage = () => {
+  const renderBody = useMemo(() => {
+    return (
+      <ConfigProvider
+        theme={{
+          components: {
+            Tabs: { itemSelectedColor: '#5d5d5d', itemHoverColor: '#5d5d5d' }
+          }
+        }}
+      >
+        <Body />
+      </ConfigProvider>
+    );
+  }, []);
 
-export interface IViewPageProps {
-}
+  return <div>{renderBody}</div>;
+};
 
-export default function ViewPage (props: IViewPageProps) {
-  return (
-    <div>
-      View page
-    </div>
-  );
-}
+export default ViewPage;

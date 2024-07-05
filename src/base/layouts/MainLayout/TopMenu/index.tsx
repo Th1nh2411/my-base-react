@@ -1,6 +1,3 @@
-import { BellOutlined, SearchOutlined } from '@ant-design/icons';
-import Icon from '@ant-design/icons/lib/components/Icon';
-import { CarIcon, MainLogo, UserIcon } from '@base/assets/icons';
 import { HEADER_HEIGHT, HEADER_PADDING, TOP_MENU_HEIGHT } from '@base/configs/layoutConfig';
 import { useIcons } from '@base/hooks/useIcons';
 import useMenus from '@base/hooks/useMenus';

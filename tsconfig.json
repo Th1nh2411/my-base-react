@@ -26,7 +26,10 @@
     "paths": {
       "@base/*": ["base/*"],
       "@vehicle/*": ["vehicle/*"],
-      "@planning/*": ["planning/*"]
+      "@planning/*": ["planning/*"],
+      "@member/*": ["member/*"],
+      "@notification/*": ["notification/*"],
+      "@account/*": ["account/*"],
     }
   },
   "include": ["src", "config-overrides.js"]

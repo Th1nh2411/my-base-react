@@ -1,0 +1,17 @@
+.wrapper{
+
+}
+.info-wrapper{
+    background-color: var(--bg-color);
+    border-radius: 12px;
+    padding: 16px 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.info-wrapper.active{
+    background-color: #F1F7FF;
+}
+.info-wrapper + .info-wrapper {
+    margin-top: 15px;
+}

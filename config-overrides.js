@@ -8,7 +8,10 @@ module.exports = function override(config) {
   config.resolve.alias = {
     '@base': path.resolve(__dirname, 'src/base/'),
     '@vehicle': path.resolve(__dirname, 'src/vehicle/'),
-    '@planning': path.resolve(__dirname, 'src/planning/')
+    '@planning': path.resolve(__dirname, 'src/planning/'),
+    '@member': path.resolve(__dirname, 'src/member/'),
+    '@notification': path.resolve(__dirname, 'src/notification/'),
+    '@account': path.resolve(__dirname, 'src/account/'),
   };
 
   // https://stackoverflow.com/questions/69135310/workaround-for-cache-size-limit-in-create-react-app-pwa-service-worker

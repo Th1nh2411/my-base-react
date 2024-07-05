@@ -1,0 +1,30 @@
+/* style */
+.flex-mid {
+    display: flex;
+    align-items: center;
+    gap: 10;
+}
+
+.wid-50 {
+    width: 50%;
+}
+
+.mt-20 {
+    margin-top: 20px;
+}
+
+.mt-10 {
+    margin-top: 10px;
+}
+
+.pr-30 {
+    padding-right: 30px;
+}
+
+.text-primary {
+    color: var(--primary-color);
+}
+
+.text-gray-scorpion{
+    color: var(--gray-scorpion)
+}

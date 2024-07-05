@@ -19,20 +19,20 @@ const Routes = {
       element: <Navigate to={`/${MENU_VEHICLE_URL}/list/all`} />
     },
     {
-      path: 'list/*',
+      path: 'list/:subParam',
       element: <ListPage />
     },
     {
-      path: 'list/',
+      path: 'view/:subParam/:id',
+      element: <ViewPage />,
+    },
+    {
+      path: 'write/:subParam',
+      element: <WritePage />,
+    },
+    {
+      path: '*',
       element: <Navigate to={`/${MENU_VEHICLE_URL}/list/all`} />
-    },
-    {
-      path: 'view/:id',
-      element: <ViewPage />
-    },
-    {
-      path: 'write/:id',
-      element: <WritePage />
     }
   ]
 };

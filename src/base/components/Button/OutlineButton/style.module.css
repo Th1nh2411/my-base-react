@@ -1,0 +1,7 @@
+/* button */
+.outline-button {
+    outline: none !important;
+    border: var(--primary-color) 1px solid;
+    color: var(--primary-color);
+    box-shadow: none;
+}

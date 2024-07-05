@@ -1,0 +1,27 @@
+.node{
+  position: relative;
+}
+.node.hasChild:hover{
+  cursor: pointer;
+  opacity: 0.7;
+  transition: all 0.1s;
+}
+.node.isChild::before{
+  position: absolute;
+  content: '';
+  left: -32px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 2px;
+  background-color: var(--border-strong-color);
+}
+.node.isChild::after{
+  position: absolute;
+  content: '';
+  left: -32px;
+  bottom: 50%;
+  width: 2px;
+  height: 20px;
+  background-color: var(--border-strong-color);
+}

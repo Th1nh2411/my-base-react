@@ -1,0 +1,23 @@
+.tabs-wrapper{
+  padding: 16px 8px;
+  margin-bottom: 8px;
+  border-bottom: 1px solid #b4b4b4;
+}
+.tab{
+  opacity: 0.6;
+  padding: 5px 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.tab + .tab{
+  margin-left: 10px;
+}
+.tab:hover{
+  opacity: 1;
+}
+.tab.active{
+  opacity: 1;
+  font-weight: bold;
+  background-color: var(--bg-color);
+}

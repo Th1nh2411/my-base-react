@@ -1,0 +1,36 @@
+.list-trip-table{
+    margin-top: 10px;
+    border: 1px solid var(--gray-1);
+    background: white;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0px 3px 5px -4px rgba(0, 0, 0, 0.75);
+    font-size: 1.1rem;
+}
+
+.list-trip-table table {
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+.list-trip-table tr:nth-child(odd) {
+    background-color: #f2f2f2;
+}
+
+.list-trip-table td {
+    padding: 8px;
+}
+
+.list-trip-table th {
+    padding: 28px 28px 18px 28px;
+    background: white;
+    color: var(--gray-scorpion);
+    font-weight: 300;
+}
+
+.div-center {
+    margin: 0px auto;
+    width: fit-content;
+    padding: 10px;
+}

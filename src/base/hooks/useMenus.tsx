@@ -52,17 +52,15 @@ type MenuMap = {
   // Các menu khác nếu có
 };
 const fetchSidebarData = async (menuKey: keyof MenuMap): Promise<MenuItemType[]> => {
-  console.log(1);
   const menuMap: MenuMap = {
-    vehicle: [
-      // { title: 'Overview', url: '/vehicle/list/all', key: 'vehicle_all' },
-      { title: '차량 목록', url: '/vehicle/list/all', key: 'vehicle_all' },
-      { title: 'Motors', url: '/vehicle/list/motors', key: 'vehicle_motors' }
+    vehicle: [{ title: '차량 목록', url: '/vehicle/list/all', key: 'vehicle_all' }],
+    planning: [{ title: '계약 목록', url: '/planning/list/all', key: 'planning_all' }],
+    member: [{ title: '고객 목록', url: '/member/list/all', key: 'member_all' }],
+    notification: [
+      { title: '카카오 알림톡 메시지 설정', url: '/notification/list/setting', key: 'notification_setting' },
+      { title: '카카오 알림톡 발송 내역', url: '/notification/list/kakao', key: 'notification_kakao' }
     ],
-    planning: [
-      { title: 'Schedule', url: '/planning/list/all', key: 'planning_all' },
-      { title: 'Bookings', url: '/planning/list/bookings', key: 'planning_bookings' }
-    ]
+    account: [{ title: '계정 관리', url: '/account/list/all', key: 'account_all' }]
   };
 
   if (menuKey in menuMap) {

@@ -1,0 +1,35 @@
+.content-wrapper{
+  border-radius: 12px;
+  background-color: white;
+  border: 1px solid var(--border-color);
+  position: relative;
+}
+.actions-wrapper{
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  color: var(--secondary-color);
+}
+.actions-wrapper.small{
+  right: 16px;
+  top: 10px;
+}
+.title-wrapper{
+  margin-left: 32px;
+  margin-bottom: 0.6rem ;
+}
+.title{
+  position: relative;
+}
+.title::before{
+  content: '';
+  position: absolute;
+  left: -8px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 2px;
+  border-radius: 10px;
+  height: calc(100% - 10px);
+  background-color: #00000073;
+  margin-right: 8px;
+}

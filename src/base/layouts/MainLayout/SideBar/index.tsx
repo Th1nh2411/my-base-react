@@ -1,4 +1,3 @@
-import { BellOutlined, SearchOutlined } from '@ant-design/icons';
 import Icon from '@ant-design/icons/lib/components/Icon';
 import { CarIcon, MainLogo, UserIcon } from '@base/assets/icons';
 import { APP_BAR_HEIGHT, SIDE_BAR_WIDTH } from '@base/configs/layoutConfig';

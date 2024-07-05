@@ -6,6 +6,7 @@ import * as React from 'react';
 import useAuth from '@base/hooks/useAuth';
 import { CloseOutlined } from '@ant-design/icons';
 import useToast from '@base/hooks/useToast';
+import CustomButton from '@base/components/CustomButton/CustomButton';
 
 export interface IProfileFormProps {
   handleClose: VoidFunction;
@@ -89,9 +90,9 @@ export default function ProfileForm(props: IProfileFormProps) {
               </Radio.Group>
             </Form.Item>
           </div>
-          <Button size="large" type="primary" style={{ marginTop: 12 }} htmlType="submit">
+          <CustomButton round size="large" type="primary" style={{ marginTop: 12 }} htmlType="submit">
             수정하기
-          </Button>
+          </CustomButton>
         </Flex>
       </Form>
     </div>
